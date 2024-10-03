@@ -17,9 +17,11 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
+            <i class='bx bx-x' onclick="closemenu()"></i>
         </nav>
+        <i class='bx bx-menu' onclick="openmenu()"></i>
     </header>
-    <section class="home">
+    <section id="home" class="home">
         <div class="home-content">
             <h1>Hi, I'm Alok Gope</h1>
             <h3>Web Developer</h3>
@@ -39,17 +41,123 @@
         </div>
         <span class="home-imgHover"></span>
     </section>
+
+    <!-- ------------------------------ABOUT---------------------------- -->
+
     <section id="about" class="About">
-        <h1>About</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, reprehenderit odio molestias excepturi et molestiae voluptatum illum error facere omnis, sunt sint ea accusantium est ipsum voluptate dolore nesciunt aliquid!</p>
-        </section>
-    <section id="projects" class="Projects">
-        <h1>My Projects</h1>
-        <p>Nothing to see here ;D</p>
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum recusandae aspernatur
+                        voluptas inventore neque odit suscipit est exercitationem excepturi ipsa sed eligendi autem
+                        minima quasi dolorum soluta necessitatibus repellat magni voluptates, eius laudantium esse
+                        facere. Quia numquam vel aut!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Web Designing</li>
+                            <li><span>Web Development</span><br>Fullstack</li>
+                            <li><span>Frontend</span><br>Backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI?UX</span><br>Web Designing</li>
+                            <li><span>Web Development</span><br>Fullstack</li>
+                            <li><span>Frontend</span><br>Backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI?UX</span><br>Web Designing</li>
+                            <li><span>Web Development</span><br>Fullstack</li>
+                            <li><span>Frontend</span><br>Backend</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- ----------------------------PROJECTS----------------------------- -->
+
+    <section id="projects" class="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="chat.jpg">
+                    <div class="layer">
+                        <h3>Real-Time Chat Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis, vel consequatur omnis
+                            ipsam sed.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="todo.png">
+                    <div class="layer">
+                        <h3>To-Do Web Application</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis, vel consequatur omnis
+                            ipsam sed.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="landp.jpeg">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nobis, vel consequatur omnis
+                            ipsam sed.</p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </section>
+
+    <!-- ----------------------------CONTACT----------------------------- -->
+
     <section id="contact" class="Contact">
-        <h1>Contact Me</h1>
-        <p>Nothing to see here ;D</p>
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bx-mail-send'></i>gopealok.04@gmail.com</p>
+                    <p><i class='bx bxs-phone-call'></i>+91 9470537899</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/alok.gope.921" target="_blank"><i
+                                class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.linkedin.com/in/contactakgope/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://github.com/alokgope16" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                    <a href="Resume_Alok.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Alok.  Made with <i class='bx bxs-heart'></i> by Alok</p>
+        </div>
     </section>
     <script src="script.js"></script>
 </body>
